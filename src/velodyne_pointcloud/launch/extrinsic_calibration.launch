@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="calibration_dir" default="/home/vishrut/ros_workspaces/velodyne_ws/src/velodyne_pointcloud/params"/>
+  <!-- Publish calibration extrinsic files -->
+  <node pkg="ford_demo" name="extrinsics_broadcaster" type="extrinsics_broadcast.sh" args="publish $(arg calibration_dir)" />
+
+</launch>

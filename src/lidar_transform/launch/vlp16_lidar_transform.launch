@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- <arg name="map_dir" default=""/> -->
+  <arg name="calibration_dir" default="/home/vishrut/ros_workspaces/mit-racecar-lidar-calibration/src/velodyne_pointcloud/params"/>
+  <!-- <arg name="reflectivity_dir" default="$(arg map_dir)/ground_reflectivity/"/> -->
+  <!-- <arg name="point_cloud_dir" default="$(arg map_dir)/3d_point_cloud/"/> -->
+  <!-- <arg name="model" default="$(find fusion_description)/urdf/fusion.urdf"/> -->
+  <!-- <arg name="rvizconfig" default="$(find lidar_transform)/rviz/demo.rviz" /> -->
+
+  <!-- <param name="robot_description" textfile="$(arg model)"/> -->
+
+  <node pkg="lidar_transform" name="extrinsics_broadcaster" type="extrinsics_broadcast.sh" args="publish $(arg calibration_dir)" />
+
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> -->
+  <node name="rviz" pkg="rviz" type="rviz" required="true" />
+</launch>

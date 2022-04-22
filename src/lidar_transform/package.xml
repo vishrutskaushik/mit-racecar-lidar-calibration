@@ -1,0 +1,18 @@
+<package format="2">
+  <name>lidar_transform</name>
+  <version>1.0.0</version>
+  <description>
+  This package contains the relevant launch files, tools, rviz plugins, scripts for transforming Velodyne VLP-16 Lidar Point Cloud
+  </description>
+  <author>Vishrut Kaushik</author>
+  <maintainer email="vishrutskaushik@gmail.com">Vishrut Kaushik</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>fusion_description</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>velodyne_pointcloud</exec_depend>
+</package>

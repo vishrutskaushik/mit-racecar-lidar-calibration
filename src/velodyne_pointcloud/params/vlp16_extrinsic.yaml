@@ -1,0 +1,16 @@
+header:
+  seq: 0
+  stamp:
+    secs: 1504071530
+    nsecs: 0
+  frame_id: base_link
+transform:
+  rotation:
+    yaw: 0.0
+    pitch: 0.0
+    roll: 0.0   
+  translation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+child_frame_id: velodyne
